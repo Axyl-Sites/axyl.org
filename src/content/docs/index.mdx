@@ -1,0 +1,59 @@
+---
+# src/content/docs/index.mdx
+title: AxylOS
+description: Get started with AxylOS.
+template: splash
+hero:
+  tagline: |
+    Dive into a new Operating System Experience.
+    <div class="roller">
+      <span id="pre_text">Born for</span>
+      <span id="changing_text">InfoSec Professionals.</span>
+    </div>
+  image:
+    file: /src/assets/gold.png
+  actions:
+    - text: Getting Started
+      link: /en/getting-started/axylos/
+      icon: right-arrow
+      variant: primary
+    - text: About the Download
+      link: /en/getting-started/download
+      icon: right-arrow
+---
+
+import "/src/styles/_overrides.scss";
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import ScriptWorkaround from "/src/components/ScriptWorkaround.astro";
+import TimelineComponent from "/src/components/TimelineComponent.astro";
+import StatusComponent from "/src/components/StatusComponent.astro";
+import DownloadCards from "/src/components/DownloadCards.jsx"
+
+<StatusComponent />
+<TimelineComponent />
+{/*
+Uncomment when to publish and show DownloadCards again
+<DownloadCards client:load/>
+*/}
+<CardGrid stagger>
+  <Card title="Secure" icon="add-document">
+    being Built on Helctic, a Rust MicroKernel, made maintained, and loved by the Axyl Projects team.
+    Desgined from the ground up to limit access to the inner rings of you operating system
+    the Kernel SDK move Drivers into a unique Driver-Space, further limiting kernel access and securing your system.
+  </Card>
+  <Card title="User-oriented" icon="star">
+    the Kernel SDK allows native use of Windows and Mac drivers
+    the rootCORP Games Anticheat allows games to be played natively on AxylOS
+    All This is work to **improving user experience**.
+  </Card>
+  <Card title="Performance" icon="rocket">
+    **UNIX Style Init System** We are replacing Systemd with a detailed series of scripts, this will
+    increase speed, reduce load times, and remove any single points of failure.
+    Configured to load the **bare minimum** for its purpose. **No useless services** or **modules** consuming your resources.
+  </Card>
+  <Card title="Flexibilty" icon="puzzle">
+    Being **flexible** as possible, leading to a unique user experience with the power to change **every aspect** of the distribution.
+  </Card>
+</CardGrid>
+
+<ScriptWorkaround />
