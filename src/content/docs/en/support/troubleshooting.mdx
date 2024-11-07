@@ -53,7 +53,6 @@ By running ISO, at boot, if login prompt freezes, reboot and select the boot ent
 #### Error: file '/vmlinuz-linux-lts' not found
 
 If, after a system update, you get the following error at boot:
-![AxylOS Snapshots Run](@assets/images/error-boot-missing-vmlinuz.png)
 
 it is probably caused by a wrong update of the Linux kernel or the boot partition was not correctly mounted during this process, or due to an interruption (freeze, reboot or shutdown) during the upgrade of the system (in particular, during the generation of the image at kernel upgrade process time).
 
@@ -301,7 +300,7 @@ Uninstall wine package, close both the WSL sessions, open CMD in Windows and run
 
 #### Win-Kex ESM Mode 'Remote Desktop can't connect'
 In case you get the following error:
-![Kex ESM RDP error](@assets/images/kex-esm-rdp-error.png)
+
 
 just open a new Windows terminal and run:
 ```shell
@@ -328,7 +327,6 @@ If you are experiencing an intermittent freezing on your environment, and you ar
 #### Browser elements overlap
 
 In case it occurs that browser elements can overlap as the following case:
-![Website Overlapping](@assets/images/website-overlapping.png)
 
 The reason is that the website is using the AxylOS system font instead of using its one.
 
@@ -355,15 +353,12 @@ Use `AxylOS-theme-tweak -l` to get the list of themes to be chosen.
 
 In case you are not able to get in the system due to a broken upgrade or similar events, you can leverage on Grub BTRFS snapshots in order to restore a previous state of your system. To do this, run the system, on the GRUB select **AxylOS Snapshots**
 
-![AxylOS Snapshots](@assets/images/athena-snapshots.png)
 
 Choose the **snapshot** you want to restore
 
-![AxylOS Snapshots Selection](@assets/images/athena-snapshots-selection.png)
 
 and select the **Linux Kernel** to run
 
-![AxylOS Snapshots Run](@assets/images/athena-snapshots-run.png)
 
 #### Cannot store HTB App Token due to secret-tool hanging
 
