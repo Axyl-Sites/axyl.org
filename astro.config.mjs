@@ -30,7 +30,7 @@ export default defineConfig({
         twitch: "https://twitch.tv/axylprojects",
       },
       editLink: {
-        baseUrl: "https://github.com/Axyl-projects/axyl-site/tree/main/",
+        baseUrl: "https://github.com/Axyl-Sites/axyl.org/tree/main/",
       },
 
       lastUpdated: true,
