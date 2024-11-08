@@ -41,8 +41,16 @@ export default defineConfig({
           items: [
             // Each item here is one entry in the navigation menu.
             {
+              label: "Latest",
+              link: "en/announcements/latest",
+            },
+            {
               label: "What is Happening",
               link: "/en/announcements/what-is-happening",
+            },
+            {
+              label: "Timeline Expectations",
+              link: "/en/announcements/timeline",
             },
           ],
         },
@@ -111,10 +119,6 @@ export default defineConfig({
             {
               label: "Customizing Shells",
               link: "/en/customization/shell",
-            },
-            {
-              label: "Customizing Display Managers",
-              link: "/en/customization/display-manager",
             },
             {
               label: "Customizing Terminal Tools",
